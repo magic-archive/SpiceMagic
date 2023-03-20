@@ -1,0 +1,169 @@
+/* Global styles */
+
+	 body {
+background: #f1f1f1;
+display: flex;
+font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+p {
+  margin: 0 0 1.5rem;
+  padding: 0;
+}
+
+ul, ol {
+  margin: 0 0 1.5rem;
+  padding: 0 0 0 1.5rem;
+}
+
+/* Header */
+
+.header {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+
+.header__logo {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.header__nav {
+  display: flex;
+}
+
+.header__nav-item {
+  margin-left: 1.5rem;
+}
+
+.header__nav-item:first-child {
+  margin-left: 0;
+}
+
+/* Footer */
+
+.footer {
+  background-color: #f5f5f5;
+  border-top: 1px solid #ddd;
+  padding: 1.5rem;
+}
+
+/* Main content */
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+
+/* Recipe card */
+
+.recipe {
+  background-color: #fff;
+  border-radius: 0.25rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+  width: calc(33.33% - 1.5rem);
+}
+
+.recipe__image {
+  background-color: #f5f5f5;
+  border-radius: 0.25rem 0.25rem 0 0;
+  height: 200px;
+  width: 100%;
+}
+
+.recipe__content {
+  padding: 1.5rem;
+}
+
+.recipe__title {
+  font-size: 1.5rem;
+  margin: 0 0 0.5rem;
+}
+
+.recipe__description {
+  color: #777;
+  margin: 0 0 1.5rem;
+}
+
+.recipe__meta {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.recipe__meta-item {
+  color: #777;
+  font-size: 
