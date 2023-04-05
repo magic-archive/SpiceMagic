@@ -22,7 +22,7 @@ function myFunction() {
   if (selectedOption == 'Khaman')
   {
    //alert("You selected " + selectedOption);
-   loadFile('file:\\\C:\\Documents\\Projects\\SpiceMagic\\dataImages\\Khaman.txt')
+   loadFile('Khaman.txt')
   }
    if (selectedOption == 'Paneer')
    {
@@ -43,7 +43,6 @@ var xhr = new XMLHttpRequest();
     alert(xhr.readyState);
     alert(xhr.status);
 		if (xhr.readyState == 4 && xhr.status == 200) {
-      alert(filename);
 			document.getElementById('text-container').value = xhr.responseText;
 		}
 	};
@@ -58,8 +57,7 @@ function loadFile(filename) {
   fetch(filename)
   .then(response => response.text())
   .then(text => {
-    alert(response.text());
-    document.getElementById('text-container').value = text;
+     document.getElementById('text-container').value = text;
   })
   .catch(error => {
     console.error('Error loading file:', error);
