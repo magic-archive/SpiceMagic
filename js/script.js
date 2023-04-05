@@ -52,8 +52,7 @@ var xhr = new XMLHttpRequest();
 */
 
 function loadFile(filename) {
-  //alert(filename);
- filename = "aboutUs.html";
+  alert(filename);
   //document.getElementById('text-container').value = "foobar ...";
 
   fetch(filename)
