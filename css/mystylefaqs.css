@@ -2,7 +2,7 @@ button {
   font-size:25px;
   font-family: 'Times New Roman';
   font-style: italic;
-  background-color: #4CAF50;
+  background-color: blue;
   border: none;
   color: white;
   padding: 05px 10px;
@@ -14,7 +14,7 @@ button {
   border-radius: 5px;
 }
 button:hover {
-  background-color: #3e8e41;
+  background-color: blue;
 }
 ul {
   list-style: none;
@@ -32,10 +32,24 @@ h1{
 		color: blue;
 	}
 body{
-	background-color: rgb(119, 221, 50);
+	background-color: #B0E0E6;
 	font-family: cambria;
-	color: black;
+	color:bl;
 	font-size: 20px;
 	}
 }
 
+
+details{
+  background-color: #303030;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+summary {
+  padding: .5em 1.3rem;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;  
+  transition: height 1s ease;
+}
