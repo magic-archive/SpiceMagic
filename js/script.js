@@ -18,6 +18,7 @@ function myFunction() {
   var filePath = '..\\dataImages' + '\\' + selectedOption + '\\';
   loadFile(filePath + 'Recipe.txt');
   //loadImage(filePath + 'Image.jpg')
+}
  
 /*
 function loadImage(imageName) {
