@@ -22,17 +22,20 @@ function myFunction() {
   if (selectedOption == 'Khaman')
   {
    //alert("You selected " + selectedOption);
-   loadFile('..\\dataImages\\Khaman.docx')
+   //loadFile('..\\dataImages\\Khaman.docx')
+    loadFile('..\\dataImages\\Kheer.txt')
   }
    if (selectedOption == 'Samosas')
    {
    //alert("You selected " + selectedOption);
-   loadFile('..\\dataImages\\Samosas.docx')
+   //loadFile('..\\dataImages\\Samosas.docx')
+     loadFile('..\\dataImages\\Kheer.rtf')
    }
    if (selectedOption == 'Undhiyu')
    {
    //alert("You selected " + selectedOption);
-   loadFile('..\\dataImages\\Undhiyu.docx')
+   //loadFile('..\\dataImages\\Undhiyu.docx')
+   loadFile('..\\dataImages\\Kheer.htm')
 }
 if (selectedOption == 'Dahi Tikhari')
    {
