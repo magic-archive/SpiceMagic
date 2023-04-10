@@ -17,10 +17,9 @@ function myFunction() {
   var selectedOption = dropdown.options[dropdown.selectedIndex].value;
   var filePath = '..\\dataImages' + '\\' + selectedOption + '\\';
   loadFile(filePath + 'Recipe.txt');
-  //loadImage(filePath + 'Image.jpg')
+  loadImage(filePath + 'Image.jpg')
 }
  
-/*
 function loadImage(imageName) {
   //alert(imageName);
     document.getElementById('image-container').value = imageName;
@@ -43,7 +42,6 @@ function myIngredients() {
   var filePath = '..\\dataImages' + '\\' + selectedOption + '\\';
   loadFile(filePath + 'Ingredients.txt');
 }
-*/
 
 
 
