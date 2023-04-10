@@ -1,19 +1,13 @@
-/*function myFunction() {
+function myFunction() {
   var dropdown = document.getElementById("myDropdown");
   var selectedOption = dropdown.options[dropdown.selectedIndex].value;
   var filePath = '..\\dataImages' + '\\' + selectedOption + '\\';
   loadHTML(filePath + 'Recipe.html')
   //loadFile(filePath + 'Recipe.txt');
-}*/
-function myFunction() {
-  var dropdown = document.getElementById("myDropdown");
-  var selectedOption = dropdown.options[dropdown.selectedIndex].value;
-  var fileName = '..\\dataImages' + '\\' + selectedOption + '.html';
-  loadHTML(fileName)
-  //loadFile(filePath + 'Recipe.txt');
 }
+
 function loadHTML(filename) {
-  alert(filename);
+  //alert(filename);
   fetch(filename)
   .then(response => response.text())
   .then(data => {
