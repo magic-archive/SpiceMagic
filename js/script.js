@@ -22,12 +22,12 @@ function myFunction() {
   if (selectedOption == 'Khaman')
   {
    //alert("You selected " + selectedOption);
-   loadFile('Khaman.txt')
+   loadFile('..\\dataImages\\Khaman.txt')
   }
    if (selectedOption == 'Paneer')
    {
    //alert("You selected " + selectedOption);
-   loadFile('Paneer.txt')
+   loadFile('..\\dataImages\\Paneer.txt')
    }
    if (selectedOption == 'Gulab Jamun')
    {
@@ -40,8 +40,6 @@ function loadFile(filename) {
 var xhr = new XMLHttpRequest();
 	xhr.open('GET', filename, true);
 	xhr.onreadystatechange = function() {
-    alert(xhr.readyState);
-    alert(xhr.status);
 		if (xhr.readyState == 4 && xhr.status == 200) {
 			document.getElementById('text-container').value = xhr.responseText;
 		}
@@ -51,9 +49,8 @@ var xhr = new XMLHttpRequest();
 */
 
 function loadFile(filename) {
-  alert(filename);
-  //document.getElementById('text-container').value = "foobar ...";
-
+  //alert(filename);
+  
   fetch(filename)
   .then(response => response.text())
   .then(text => {
