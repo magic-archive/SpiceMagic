@@ -17,8 +17,8 @@ function myFunction() {
   var dropdown = document.getElementById("myDropdown");
   var selectedOption = dropdown.options[dropdown.selectedIndex].value;
   var filePath = '..\\dataImages' + '\\' + selectedOption + '\\';
-  loadFile(filePath + 'Recipe.txt');
-  loadImage(filePath + 'Image.jpg')
+  //loadFile(filePath + 'Recipe.txt');
+  //loadImage(filePath + 'Image.jpg')
   loadFile('..\\dataImages\\Kheer.txt');
 }
 function loadImage(imageName) {
