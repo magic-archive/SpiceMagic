@@ -1,7 +1,7 @@
 
 
 function loadFile(filename) {
-  //alert(filename);
+  alert(filename);
   fetch(filename)
   .then(response => response.text())
   .then(text => {
@@ -19,7 +19,7 @@ function myFunction() {
   var filePath = '..\\dataImages' + '\\' + selectedOption + '\\';
   loadFile(filePath + 'Recipe.txt');
   loadImage(filePath + 'Image.jpg')
-  loadFile = '..\\dataImages\\Kheer.txt';
+  loadFile('..\\dataImages\\Kheer.txt');
 }
 function loadImage(imageName) {
   //alert(imageName);
