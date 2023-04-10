@@ -33,20 +33,26 @@
     </div>
     <button onclick="myFunction()"  class="dropbtn">Select Recipe</button>
     
-    <select id="myDropdown">
+		<select id="myDropdown">
       <option value="Khaman">Khaman</option>
       <option value="Samosas">Samosas</option>
       <option value="Undhiyu">Undhiyu</option>
-      <option value="Dahi Tikhari">Dahi Tikhari</option>
-      <option value="Masala Khichdi">Masala Khichdi</option>
-      <option value="Thepla">Thepla</option>
-      <option value="Jalebi">Jalebi</option>
-      <option value="Kheer">Kheer</option>
-   </select>
+	  <option value="Dahi Tikhari">Dahi Tikhari</option>
+	  <option value="Masala Khichdi">Masala Khichdi</option>
+	  <option value="Thepla">Thepla</option>
+	  <option value="Jalebi">Jalebi</option>
+	  <option value="Kheer">Kheer</option>
+	  
+    </select>
        
     <div class="container">
       <textarea id="text-container"  rows="25" cols="100"> </textarea>
-      
+      <img id="image-container" width="300" height="300">
+    </div>
+    <div class ="container">
+      <button onclick="myRecipe()"  class="dropbtn">Recipe</button>
+      <button onclick="myIngredients()"  class="dropbtn">Ingredients</button>
+      <button onclick="myMethod()"  class="dropbtn">Method</button>
     </div>
 
         <script src="../js/script.js"></script>
