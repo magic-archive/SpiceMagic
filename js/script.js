@@ -24,9 +24,9 @@ function myFunction() {
   {
     filePath = '..\\dataImages' + '\\' + selectedOption + '\\';
     //alert("You selected " + filePath);
-    loadFile(filePath + 'Recipe.txt');
+    //loadFile(filePath + 'Recipe.txt');
     //loadImage(filePath + 'Image.jpg')
-    //loadFile('..\\dataImages\\Kheer.txt')
+    loadFile('..\\dataImages\\Khaman\\Recipe.txt')
   }
    if (selectedOption == 'Samosas')
    {
