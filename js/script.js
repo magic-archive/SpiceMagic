@@ -1,30 +1,3 @@
-/*const article = document.querySelector("#content");
-const btn = document.querySelector("#show-More")
-
-btn.addEventListener("click", showMore);
-
-function showMore() {
-  if (article.className == "open") {
-    // read less
-    article.className = "";
-    btn.innerHTML = "Show More";
-  } else {
-    //read more
-    article.className = "open";
-    btn.innerHTML = "Show Less";
-  }
-}
-*/
-
-function myFunction() {
-  var filePath;
-  var dropdown = document.getElementById("myDropdown");
-  var selectedOption = dropdown.options[dropdown.selectedIndex].value;
-  var filePath = '..\\dataImages' + '\\' + selectedOption + '\\';
-  //loadFile(filePath + 'Recipe.txt');
-  loadFile('..\\dataImages\\Kheer.txt');
-  //loadImage(filePath + 'Image.jpg')
-}
 
 
 function loadFile(filename) {
@@ -38,12 +11,38 @@ function loadFile(filename) {
   .catch(error => {
     console.error('Error loading file:', error);
   });
+}
 
+function myFunction() {
+  var dropdown = document.getElementById("myDropdown");
+  var selectedOption = dropdown.options[dropdown.selectedIndex].value;
+  var filePath = '..\\dataImages' + '\\' + selectedOption + '\\';
+  loadFile(filePath + 'Recipe.txt');
+  loadImage(filePath + 'Image.jpg')
 }
 function loadImage(imageName) {
-  alert(imageName);
-  document.getElementById('image-container').value = imageName;
+  //alert(imageName);
+    document.getElementById('image-container').value = imageName;
 }
+function myRecipe() {
+  var dropdown = document.getElementById("myDropdown");
+  var selectedOption = dropdown.options[dropdown.selectedIndex].value;
+  var filePath = '..\\dataImages' + '\\' + selectedOption + '\\';
+  loadFile(filePath + 'Recipe.txt');
+}
+function myMethod() {
+  var dropdown = document.getElementById("myDropdown");
+  var selectedOption = dropdown.options[dropdown.selectedIndex].value;
+  var filePath = '..\\dataImages' + '\\' + selectedOption + '\\';
+  loadFile(filePath + 'Method.txt');
+}
+function myIngredients() {
+  var dropdown = document.getElementById("myDropdown");
+  var selectedOption = dropdown.options[dropdown.selectedIndex].value;
+  var filePath = '..\\dataImages' + '\\' + selectedOption + '\\';
+  loadFile(filePath + 'Ingredients.txt');
+}
+
 
 
 
