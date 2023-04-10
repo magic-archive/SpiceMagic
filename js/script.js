@@ -22,32 +22,45 @@ function myFunction() {
   if (selectedOption == 'Khaman')
   {
    //alert("You selected " + selectedOption);
-   loadFile('..\\dataImages\\Khaman.txt')
+   loadFile('..\\dataImages\\Khaman.docx')
   }
-   if (selectedOption == 'Paneer')
+   if (selectedOption == 'Samosas')
    {
    //alert("You selected " + selectedOption);
-   loadFile('..\\dataImages\\Paneer.txt')
+   loadFile('..\\dataImages\\Samosas.docx')
    }
-   if (selectedOption == 'Gulab Jamun')
+   if (selectedOption == 'Undhiyu')
    {
    //alert("You selected " + selectedOption);
-   loadFile('..\\dataImages\\GulabJamun.txt')
+   loadFile('..\\dataImages\\Undhiyu.docx')
 }
+if (selectedOption == 'Dahi Tikhari')
+   {
+   //alert("You selected " + selectedOption);
+   loadFile('..\\dataImages\\Dahi Tikhari.docx')
 }
-/*
-function loadFile(filename) {
-var xhr = new XMLHttpRequest();
-	xhr.open('GET', filename, true);
-	xhr.onreadystatechange = function() {
-		if (xhr.readyState == 4 && xhr.status == 200) {
-			document.getElementById('text-container').value = xhr.responseText;
-		}
-	};
-	xhr.send();
+if (selectedOption == 'Masala Khichdi')
+   {
+   //alert("You selected " + selectedOption);
+   loadFile('..\\dataImages\\Masala Khichdi.docx')
 }
-*/
+if (selectedOption == 'Thepla')
+   {
+   //alert("You selected " + selectedOption);
+   loadFile('..\\dataImages\\Thepla.docx')
+}
+if (selectedOption == 'Jalebi')
+   {
+   //alert("You selected " + selectedOption);
+   loadFile('..\\dataImages\\Jalebi.docx')
+}
+if (selectedOption == 'Kheer')
+   {
+   //alert("You selected " + selectedOption);
+   loadFile('..\\dataImages\\Kheer.docx')
+}
 
+}
 function loadFile(filename) {
   //alert(filename);
   
@@ -61,8 +74,3 @@ function loadFile(filename) {
   });
 
 }
-
-
-
-
-
