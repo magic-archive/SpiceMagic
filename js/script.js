@@ -16,10 +16,21 @@ function myFunction() {
   var dropdown = document.getElementById("myDropdown");
   var selectedOption = dropdown.options[dropdown.selectedIndex].value;
   var filePath = '..\\dataImages' + '\\' + selectedOption + '\\';
-  loadFile(filePath + 'Recipe.txt');
-  loadImage(filePath + 'Image.jpg')
+  loadHTML(filePath + 'Recipe.html')
+  //loadFile(filePath + 'Recipe.txt');
+  //loadImage(filePath + 'Image.jpg')
 }
- 
+function loadHTML(filename) {
+  alert(filename);
+  fetch(filename)
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById('recipe-container').innerHTML = data;
+  })
+  .catch(error => {
+    console.error('Error loading file:', error);
+  });
+}
 function loadImage(imageName) {
   //alert(imageName);
     document.getElementById('image-container').value = imageName;
