@@ -4,10 +4,24 @@
   <head>
     <title>Recipes</title>
     <link rel="stylesheet" href="../css/mystylerecipes.css">
+    <style>
+      img {
+        float: right;
+        margin: 0 0 20px 30px;
+        }
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center
+      }
+      .text {
+      font-size: 20px;
+      padding-left: 20px;
+      }
+    </style>
   </head>
   <body>
-  <h1>Spice Magic By Kesar</h1>
-      
+      <h1>Recipes</h1>
 		 <div>
 		 <br>
         <a href="../index.html"><button>Home</button></a>
@@ -15,10 +29,11 @@
         <a href="faqs.html"><button>FAQS</button></a>
         <a href="aboutUs.html"><button>About Us</button></a>
 		</br>
-		 
     <br>
     </div>
-    	<select id="myDropdown">
+    <button onclick="myFunction()"  class="dropbtn">Select Recipe</button>
+    
+		<select id="myDropdown">
       <option value="Khaman">Khaman</option>
       <option value="Samosas">Samosas</option>
       <option value="Undhiyu">Undhiyu</option>
@@ -29,13 +44,12 @@
 	  <option value="Kheer">Kheer</option>
 	  
     </select>
-	<button onclick="myFunction()"  class="dropbtn">Select Recipe</button>
-     </div>
-	 <div>
-	 <textarea id="text-container"  rows="50" cols="120">
-      </textarea>
-	  </div>
-     
+       
+    <div class="container">
+      <textarea id="text-container"  rows="25" cols="100"> </textarea>
+      <img id="image-container" width="300" height="300">
+    </div>
+
         <script src="../js/script.js"></script>
-	  </body>
+  </body>
 </html>
