@@ -5,7 +5,6 @@ function loadFile(filename) {
   fetch(filename)
   .then(response => response.text())
   .then(text => {
-    alert(response.text());
     document.getElementById('text-container').value = text;
   })
   .catch(error => {
@@ -17,10 +16,10 @@ function myFunction() {
   var dropdown = document.getElementById("myDropdown");
   var selectedOption = dropdown.options[dropdown.selectedIndex].value;
   var filePath = '..\\dataImages' + '\\' + selectedOption + '\\';
-  //loadFile(filePath + 'Recipe.txt');
+  loadFile(filePath + 'Recipe.txt');
   //loadImage(filePath + 'Image.jpg')
-  loadFile('..\\dataImages\\Kheer.txt');
-}
+ 
+/*
 function loadImage(imageName) {
   //alert(imageName);
     document.getElementById('image-container').value = imageName;
@@ -43,7 +42,7 @@ function myIngredients() {
   var filePath = '..\\dataImages' + '\\' + selectedOption + '\\';
   loadFile(filePath + 'Ingredients.txt');
 }
-
+*/
 
 
 
