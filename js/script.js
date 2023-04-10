@@ -21,13 +21,14 @@ function myFunction() {
   var dropdown = document.getElementById("myDropdown");
   var selectedOption = dropdown.options[dropdown.selectedIndex].value;
   var filePath = '..\\dataImages' + '\\' + selectedOption + '\\';
-  loadFile(filePath + 'Recipe.txt');
+  //loadFile(filePath + 'Recipe.txt');
+  loadFile('..\\dataImages\\Kheer.txt');
   //loadImage(filePath + 'Image.jpg')
 }
 
 
 function loadFile(filename) {
-  alert(filename);
+  //alert(filename);
   fetch(filename)
   .then(response => response.text())
   .then(text => {
