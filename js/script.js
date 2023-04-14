@@ -2,7 +2,7 @@ function myFunction() {
   var dropdown = document.getElementById("myDropdown");
   var selectedOption = dropdown.options[dropdown.selectedIndex].value;
   var filePath = '..\\dataImages' + '\\' + selectedOption + '\\';
-  loadHTML(filePath + 'recipe.html')
+  loadHTML(filePath + 'recipe.htm')
   //loadFile(filePath + 'Recipe.txt');
 }
 
