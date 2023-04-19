@@ -2,7 +2,8 @@ function myFunction() {
   var dropdown = document.getElementById("myDropdown");
   var selectedOption = dropdown.options[dropdown.selectedIndex].value;
   var filePath = '..\\dataImages' + '\\' + selectedOption + '\\';
-  loadHTML(filePath + 'recipe.htm')
+ // loadHTML(filePath + 'recipe.htm')
+  loadHTML('..\\dataImages\\Dahi Tikhari\\DahiTikhar.htm');
  
 }
 
