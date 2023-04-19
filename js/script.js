@@ -3,7 +3,7 @@ function myFunction() {
   var selectedOption = dropdown.options[dropdown.selectedIndex].value;
   var filePath = '..\\dataImages' + '\\' + selectedOption + '\\';
  // loadHTML(filePath + 'recipe.htm')
-  loadHTML('..\\dataImages\\Dahi Tikhari\\DahiTikhar.htm');
+  loadHTML('..\\dataImages\\Dahi Tikhari\\DahiTikhari.htm');
  
 }
 
