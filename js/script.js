@@ -8,7 +8,7 @@ function myFunction1() {
 }
 
 function loadHTML(filename) {
-  alert(filename);
+  
   fetch(filename)
   .then(response => response.text())
   .then(data => {
