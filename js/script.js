@@ -8,7 +8,7 @@ function myFunction1() {
 }
 
 function loadHTML(filename) {
-  //alert(filename);
+  alert(filename);
   fetch(filename)
   .then(response => response.text())
   .then(data => {
@@ -36,7 +36,6 @@ function myFunction() {
 var dropdown = document.getElementById("myDropdown");
   var selectedOption = dropdown.options[dropdown.selectedIndex].value;
   var filePath = '..\\dataImages' + '\\' + selectedOption + '\\' + selectedLang;
-  alert(filepath+selectedLang);
   loadHTML(filePath + selectedLang)
 }
 
