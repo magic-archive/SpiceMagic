@@ -1,9 +1,9 @@
-function myFunction() {
+function myFunction1() {
   var dropdown = document.getElementById("myDropdown");
   var selectedOption = dropdown.options[dropdown.selectedIndex].value;
   var filePath = '..\\dataImages' + '\\' + selectedOption + '\\';
- // loadHTML(filePath + 'recipe.htm')
-  loadHTML('..\\dataImages\\Dahi Tikhari\\DahiTikhari.htm');
+  loadHTML(filePath + 'recipe.htm')
+  //loadHTML('..\\dataImages\\Dahi Tikhari\\DahiTikhari.htm');
  
 }
 
@@ -18,7 +18,7 @@ function loadHTML(filename) {
     console.error('Error loading file:', error);
   });
 }
-function myFunction1() {
+function myFunction() {
   var dropdown = document.getElementById("myDropdown");
   var selectedOption = dropdown.options[dropdown.selectedIndex].value;
 
@@ -36,6 +36,7 @@ function myFunction1() {
 var dropdown = document.getElementById("myDropdown");
   var selectedOption = dropdown.options[dropdown.selectedIndex].value;
   var filePath = '..\\dataImages' + '\\' + selectedOption + '\\' + selectedLang;
+  alert(filepath+selectedLang);
   loadHTML(filePath + selectedLang)
 }
 
