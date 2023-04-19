@@ -32,8 +32,6 @@ function myFunction() {
 var dropdown = document.getElementById("myDropdown");
   var selectedOption = dropdown.options[dropdown.selectedIndex].value;
   var filePath = '..\\dataImages' + '\\' + selectedOption + '\\' + selectedLang;
-  alert(selectedOption);
-  alert(selectedLang);
   loadHTML(filePath)
 }
 
