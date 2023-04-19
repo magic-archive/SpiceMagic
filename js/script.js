@@ -19,9 +19,6 @@ function loadHTML(filename) {
   });
 }
 function myFunction() {
-  var dropdown = document.getElementById("myDropdown");
-  var selectedOption = dropdown.options[dropdown.selectedIndex].value;
-
   var selectedLang; 
   let engL =  document.getElementById("radio1");
   let hinL = document.getElementById("radio2");
@@ -32,10 +29,11 @@ function myFunction() {
    selectedLang = hinL.value;
    if (gujL.checked)
    selectedLang = gujL.value;
-
 var dropdown = document.getElementById("myDropdown");
   var selectedOption = dropdown.options[dropdown.selectedIndex].value;
   var filePath = '..\\dataImages' + '\\' + selectedOption + '\\' + selectedLang;
+  alert(selectedOption);
+  alert(selectedLang);
   loadHTML(filePath + selectedLang)
 }
 
