@@ -34,7 +34,7 @@ var dropdown = document.getElementById("myDropdown");
   var filePath = '..\\dataImages' + '\\' + selectedOption + '\\' + selectedLang;
   alert(selectedOption);
   alert(selectedLang);
-  loadHTML(filePath + selectedLang)
+  loadHTML(filePath)
 }
 
 
