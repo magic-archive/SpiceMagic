@@ -3,12 +3,8 @@ function myFunction1() {
   var selectedOption = dropdown.options[dropdown.selectedIndex].value;
   var filePath = '..\\dataImages' + '\\' + selectedOption + '\\';
   loadHTML(filePath + 'recipe.htm')
-  //loadHTML('..\\dataImages\\Dahi Tikhari\\DahiTikhari.htm');
- 
-}
-
+ }
 function loadHTML(filename) {
-  
   fetch(filename)
   .then(response => response.text())
   .then(data => {
