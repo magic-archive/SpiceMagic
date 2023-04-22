@@ -1,4 +1,4 @@
-/*function myFunction1() {
+function myFunction1() {
   var dropdown = document.getElementById("myDropdown");
   var selectedOption = dropdown.options[dropdown.selectedIndex].value;
   var filePath = '..\\dataImages' + '\\' + selectedOption + '\\';
@@ -13,7 +13,7 @@ function loadHTML(filename) {
   .catch(error => {
     console.error('Error loading file:', error);
   });
-}*/
+
 function myFunction() {
   var selectedLang; 
   let engL =  document.getElementById("radio1");
