@@ -2,7 +2,7 @@ function myFunction1() {
   var dropdown = document.getElementById("myDropdown");
   var selectedOption = dropdown.options[dropdown.selectedIndex].value;
   var filePath = '..\\dataImages' + '\\' + selectedOption + '\\';
-  loadHTML(filePath + 'recipe.htm')
+  loadHTML(filePath + 'recipe.htm');
  }
 function loadHTML(filename) {
   fetch(filename)
@@ -28,7 +28,7 @@ function myFunction() {
 var dropdown = document.getElementById("myDropdown");
   var selectedOption = dropdown.options[dropdown.selectedIndex].value;
   var filePath = '..\\dataImages' + '\\' + selectedOption + '\\' + selectedLang;
-  loadHTML(filePath)
+  loadHTML(filePath);
 }
 
 
