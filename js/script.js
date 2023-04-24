@@ -13,7 +13,7 @@ function loadHTML(filename) {
   .catch(error => {
     console.error('Error loading file:', error);
   });
-
+}
 function myFunction() {
   var selectedLang; 
   let engL =  document.getElementById("radio1");
